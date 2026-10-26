@@ -1,0 +1,28 @@
+[project]
+name = "gestion-maison"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sidnou", email = "sidjack972@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django==6.1.2",
+    "django-environ>=0.14.0",
+    "django-htmx>=1.29.0",
+    "django-tailwind[cookiecutter,honcho,reload]>=4.6.0",
+]
+
+[project.scripts]
+gestion-maison = "gestion_maison:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
