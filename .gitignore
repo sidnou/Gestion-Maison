@@ -169,3 +169,5 @@ media/
 .idea/
 
 .ruff_cache/
+.junie/
+
