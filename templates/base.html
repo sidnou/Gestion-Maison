@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ Titre }}</title>
+</head>
+<body>
+{% block navbar %}
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Accueil</a></li>
+            <li><a href="{% url 'liste_course_list' %}">Listes de courses</a></li>
+        </ul>
+    </nav>
+{% endblock navbar %}
+{# Contenue de la page #}
+{% block content %}
+
+{% endblock %}
+
+{% block footer %}
+    <footer>
+        <p>&copy; 2024 Gestion Maison</p>
+    </footer>
+{% endblock footer %}
+</body>
+</html>

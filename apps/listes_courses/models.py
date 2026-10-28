@@ -4,7 +4,7 @@ from django.urls import reverse
 
 # Create your models here.
 class ListeCourse(models.Model):
-    nom_liste_course = models.CharField(max_length=255, verbose_name="Nom de la liste de course")
+    nom_liste_course = models.CharField(max_length=255, unique=True, verbose_name="Nom de la liste de course")
 
     class Meta:
         verbose_name = "Liste de course"
