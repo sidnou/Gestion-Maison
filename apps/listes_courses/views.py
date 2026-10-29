@@ -31,14 +31,14 @@ class Categoriecreateview(CreateView):
 class Listescourseslistview(ListView):
     model = ListeCourse
     template_name = "listes_courses/liste_course_list.html"
-    context_object_name = "liste_courses"
+    context_object_name = "listes_courses"
 
 
 # Create your views here.
 class Listescoursesdetailview(DetailView):
     model = ListeCourse
     template_name = "listes_courses/liste_course_detail.html"
-    context_object_name = "liste_course"
+    context_object_name = "listes_courses"
 
 
 class Listescoursescreateview(CreateView):

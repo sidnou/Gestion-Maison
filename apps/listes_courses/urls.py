@@ -14,7 +14,7 @@ from .views import (
 
 urlpatterns = [
     path('', Listescourseslistview.as_view(), name='liste_course_list'),
-    path('detail/', Listescoursesdetailview.as_view(), name='liste_course_detail'),
+    path('detail/<int:pk>/', Listescoursesdetailview.as_view(), name='liste_course_detail'),
     path('add/', Listescoursescreateview.as_view(), name='liste_course_create'),
     path("articles/", Articlelistview.as_view(), name="article_list"),
     path("articles/detail/",Articledetailview.as_view(),name="article_detail"),

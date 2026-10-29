@@ -18,7 +18,8 @@ class ListeCourse(models.Model):
         return reverse('listes_courses:detail', args=[str(self.id)])
 class Categorie(models.Model):
     nom_categorie = models.CharField(max_length=255,unique=True, verbose_name="Nom de la catégorie")
-
+    def __str__(self) -> str:
+        return f"{self.nom_categorie}"
 class Article(models.Model):
     liste_course = models.ForeignKey(ListeCourse, on_delete=models.CASCADE)
     nom_article = models.CharField(max_length=255, verbose_name="Nom de l'article")

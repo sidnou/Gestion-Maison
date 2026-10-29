@@ -2,5 +2,20 @@
 
 {% block content %}
     <h1>Articles</h1>
-
+    <table>
+        <tr>
+            <th>Liste de Course</th>
+            <th>Nom de l'article</th>
+            <th>Catégorie</th>
+            <th>Quantité</th>
+        </tr>
+        {% for article in articles %}
+            <tr>
+                <td>{{ article.liste_course }}</td>
+                <td>{{ article.nom_article }}</td>
+                <td>{{ article.categorie }}</td>
+                <td>{{ article.quantite }}</td>
+            </tr>
+        {% endfor %}
+    </table>
 {% endblock %}
