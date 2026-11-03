@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tailwind',
+    "theme",
     'apps.accounts',
     'apps.listes_courses',
     'apps.recettes',
@@ -129,3 +130,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # model users personalisé
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+# Tailwind CSS
+TAILWIND_APP_NAME="theme"

@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
-
+{% block title %}<h1>Liste des courses</h1>{% endblock title %}
 {% block content %}
-    <h1>Liste des courses</h1>
-    <ul>
-        {% for liste_course in listes_courses %}
-            <li><a href="{% url 'liste_course_detail' liste_course.id %}">{{ liste_course.nom_liste_course }}</a></li>
-        {% endfor %}
-    </ul>
+    {% for liste_course in listes_courses %}
+
+        <p><a href="#">{{ liste_course.nom_liste_course }}</a></p>
+
+    {% endfor %}
+
 {% endblock %}

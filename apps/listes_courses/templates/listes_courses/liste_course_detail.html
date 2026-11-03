@@ -1,10 +1,7 @@
 {% extends "base.html" %}
 
+{% block title %}<h1>{{ listes_courses.nom_liste_course }}</h1>{% endblock title %}
+
 {% block content %}
-    <h1>{{ listes_courses.nom_liste_course }}</h1>
-    <ul>
-        {% for item in listes_courses.items.all %}
-            <li>{{ item.nom_item }} - {{ item.quantite }}</li>
-        {% endfor %}
-    </ul>
-{% endblock %}
+    <p>{{ listes_courses.description }}</p>
+{% endblock content %}

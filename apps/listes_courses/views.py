@@ -18,16 +18,23 @@ class Articlecreateview(CreateView):
     model = Article
     template_name = "listes_courses/article_create.html"
 
+
 class Categorielistview(ListView):
     model = Categorie
     template_name = "listes_courses/categorie_list.html"
     context_object_name = "categorie"
+
+
 class Categoriedetailview(DetailView):
     model = Categorie
     template_name = "listes_courses/categorie_detail.html"
+
+
 class Categoriecreateview(CreateView):
     model = Categorie
     template_name = "listes_courses/categorie_create.html"
+
+
 class Listescourseslistview(ListView):
     model = ListeCourse
     template_name = "listes_courses/liste_course_list.html"

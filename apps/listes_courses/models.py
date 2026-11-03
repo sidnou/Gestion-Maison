@@ -21,11 +21,13 @@ class Categorie(models.Model):
     def __str__(self) -> str:
         return f"{self.nom_categorie}"
 class Article(models.Model):
-    liste_course = models.ForeignKey(ListeCourse, on_delete=models.CASCADE)
+    liste_course = models.ForeignKey(ListeCourse, on_delete=models.CASCADE,verbose_name="liste course", related_name="liste_course")
     nom_article = models.CharField(max_length=255, verbose_name="Nom de l'article")
-    categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE, verbose_name="Categorie")
+    categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE, verbose_name="Categorie",related_name="categorie")
     quantite = models.IntegerField(verbose_name="Quantité")
 
     class Meta:
         verbose_name = "Article"
         verbose_name_plural = "Articles"
+    def __str__(self) -> str:
+        return f"{self.nom_article} -- {self.categorie} -- {self.quantite}"
