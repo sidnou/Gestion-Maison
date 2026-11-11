@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ Titre }}</title>
-    {% tailwind_css %}
-    <link rel="stylesheet" href="{% static 'css/style_base.css' %}">
+{#    {% tailwind_css %}#}
+{#    <link rel="stylesheet" href="{% static 'css/style_base.css' %}">#}
 </head>
 <body>
 <div>
@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li><a href="{% url 'home' %}">Accueil</a></li>
-                    <li><a href="{% url 'liste_course_list' %}">Listes de courses</a></li>
+                    <li><a href="{% url 'listes_courses:liste_course_list' %}">Listes de courses</a></li>
                 </ul>
             </nav>
         {% endblock navbar %}

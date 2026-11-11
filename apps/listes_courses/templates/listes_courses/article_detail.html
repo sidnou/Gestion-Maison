@@ -1,6 +1,9 @@
 {% extends "base.html" %}
-
 {% block content %}
-    <h1>{{ article.nom }}</h1>
+    <h1>Détails de l'article</h1>
+    <p><strong>Liste de Course:</strong> {{ article.liste_course }}</p>
+    <p><strong>Nom de l'article:</strong> {{ article.nom_article }}</p>
+    <p><strong>Catégorie:</strong> {{ article.categorie }}</p>
+    <p><strong>Quantité:</strong> {{ article.quantite }}</p>
 
 {% endblock %}

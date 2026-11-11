@@ -3,7 +3,7 @@
 {% block content %}
     {% for liste_course in listes_courses %}
 
-        <p><a href="#">{{ liste_course.nom_liste_course }}</a></p>
+        <p><a href="{% url 'listes_courses:article_list' %}">{{ liste_course.nom_liste_course }}</a></p>
 
     {% endfor %}
 
