@@ -1,13 +1,13 @@
 from django.urls import path
 
 from .views import (
+    AricleDetailview,
     Articlecreateview,
     Articlelistview,
     Categoriecreateview,
     Categorielistview,
     Listescoursescreateview,
-
-    Listescourseslistview, AricleDetailview,
+    Listescourseslistview,
 )
 
 app_name = "listes_courses"

@@ -1,5 +1,5 @@
 from django.urls import reverse_lazy
-from django.views.generic import CreateView,DetailView,ListView
+from django.views.generic import CreateView, DetailView, ListView
 
 from apps.listes_courses.models import Article, Categorie, ListeCourse
 
@@ -43,5 +43,5 @@ class Listescoursescreateview(CreateView):
 
     success_url = reverse_lazy("liste_course_list")
 
-    def get_success_url(self) -> str:
+    def get_success_url(self):
         return self.success_url

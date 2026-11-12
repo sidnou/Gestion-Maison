@@ -1,9 +1,7 @@
-from argparse import Action
 
 from django.contrib import admin
-from django.db import models
-from apps.listes_courses.models import Article, Categorie, ListeCourse
 
+from apps.listes_courses.models import Article, Categorie, ListeCourse
 
 # Register your models here.
 

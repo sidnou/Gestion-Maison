@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'apps.recettes',
     'apps.stocks',
     'apps.core',
+    'apps.planning_menu',
 ]
 
 MIDDLEWARE = [
